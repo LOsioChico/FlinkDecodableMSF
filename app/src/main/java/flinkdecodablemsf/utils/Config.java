@@ -25,6 +25,10 @@ public class Config {
         return devices;
     }
 
+    public int getDeviceCount() {
+        return devices.size();
+    }
+
     public long getInterval() {
         return interval;
     }
