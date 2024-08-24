@@ -18,6 +18,14 @@ repositories {
 dependencies {
     // This dependency is used by the application.
     implementation libs.guava
+
+    implementation platform('software.amazon.awssdk:bom:2.27.10')
+    implementation 'software.amazon.awssdk:kinesis'
+    implementation 'software.amazon.awssdk:sts'
+
+    implementation platform('org.apache.logging.log4j:log4j-bom:2.20.0')
+    implementation 'org.apache.logging.log4j:log4j-slf4j2-impl'
+    implementation 'org.apache.logging.log4j:log4j-1.2-api'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
