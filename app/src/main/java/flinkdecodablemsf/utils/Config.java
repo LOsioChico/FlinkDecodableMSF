@@ -9,7 +9,7 @@ import software.amazon.awssdk.regions.Region;
 public class Config {
 
     private final List<Device> devices = new ArrayList<>();
-    private final long interval = 250L;
+    private final long interval = 1000L;
     private final String output = "output_stream";
     private final Region awsRegion = Region.US_EAST_2;
 
