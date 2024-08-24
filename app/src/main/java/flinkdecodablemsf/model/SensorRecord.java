@@ -38,6 +38,14 @@ public class SensorRecord {
         return unit;
     }
 
+    public String getJsonString() {
+        return "{\"deviceId\":\"" + deviceId + "\","
+                + "\"timestamp\":\"" + timestamp + "\","
+                + "\"sensorType\":\"" + sensorType + "\","
+                + "\"value\":" + value + ","
+                + "\"unit\":\"" + unit + "\"}";
+    }
+
     @Override
     public String toString() {
         return "SensorReading{"
