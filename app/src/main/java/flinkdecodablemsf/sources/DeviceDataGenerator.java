@@ -39,7 +39,7 @@ public class DeviceDataGenerator {
     }
 
     private double generateRandomValue(double min, double max) {
-        return min + Math.random() * (max - min);
+        return Math.round((min + Math.random() * (max - min)) * 100.0) / 100.0;
     }
 
     private SensorRecord createSensorRecord(Device device, double value, String unit) {
